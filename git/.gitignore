@@ -1,0 +1,10 @@
+#IDE
+.idea
+
+#TWGIT
+.twgit_features_subject
+
+#coverage generated from a Symfony app and linked in web folder
+coverage
+web/coverage
+web/coverage*

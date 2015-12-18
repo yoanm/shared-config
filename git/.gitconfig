@@ -1,0 +1,58 @@
+# Nice gist : https://gist.github.com/pksunkara/988716
+[user]
+    name = User Name
+    email = UserName@toto.com
+[core]
+    editor = vim
+    whitespace = fix,-indent-with-non-tab,trailing-space
+	excludesfile = /home/vagrant/.gitignore
+[color "branch"]
+    current = yellow bold
+    local = green
+    remote = cyan
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = magenta bold
+    deleted = red bold
+[alias]
+    sb = status -s -b
+    st = status
+    #############
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    cam = commit -am
+    ci = commit
+    #############
+    co = checkout
+    lg = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
+    br = branch
+    df = diff
+    dc = diff --cached
+    #############
+    me = branch -a --merged
+    #############
+    fa = fetch --all
+    fp = fetch --prune
+    #############
+    ap = apply
+    as = apply --stat
+    ac = apply --check
+[include]
+    path = /home/vagrant/.git_aliases
+[push]
+    default = matching
+[init]
+	templatedir = ~/.git_template
+[rerere]
+    enabled = 1
+    autoupdate = 1
+
