@@ -1,0 +1,5 @@
+alias +vmDir="cd $VAGRANT_VM_DIR"
+alias +vmStart="+vmDir && make up && cd -"
+alias +vmStop="+vmDir && make down && cd -"
+alias +vmSsh="+vmDir && vagrant ssh"
+

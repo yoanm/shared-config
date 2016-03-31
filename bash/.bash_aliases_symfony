@@ -1,0 +1,2 @@
+alias +sfLogDev="tail -f app/logs/dev.log|grep -Ev '(doctrine|app|event|listener)\.DEBUG'"
+
