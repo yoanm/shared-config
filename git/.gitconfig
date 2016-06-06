@@ -5,7 +5,9 @@
 [core]
     editor = vim
     whitespace = fix,-indent-with-non-tab,trailing-space
-	excludesfile = /home/vagrant/.gitignore
+    excludesfile = /home/vagrant/.gitignore
+[color]
+    ui = auto	
 [color "branch"]
     current = yellow bold
     local = green
